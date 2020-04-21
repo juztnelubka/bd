@@ -57,7 +57,7 @@ create table users_matches(
   match_id bigint references matches(id),
   user_id bigint references users(id),
   champion_id int references champions(id),
-  team enum('Blue','Red'),
+  team enum('Red','Blue'),
   kills tinyint,
   deaths tinyint,
   assists tinyint,
